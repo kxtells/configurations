@@ -210,8 +210,8 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line/Co
 " => Kill Those Trailing Whitespaces!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
- Delete trailing white space on save, useful for Python and CoffeeScript ;)
- I love that
+" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+" I love that
 func! DeleteTrailingWS()
   exe "normal mz"
   %s/\s\+$//ge
