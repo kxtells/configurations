@@ -1,0 +1,35 @@
+startup_message off
+
+#
+# # more scrollbacks!
+defscrollback 10000
+#
+# # disable use of the "alternate" terminal
+# # thus allowing scrollbars to function as normal in
+# # many terminal emulators! <3 it
+termcapinfo xterm* ti@:te@
+#
+# # have screen update terminal emulators titlebar
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+defhstatus "screen ^E (^Et) | $USER@^EH"
+#
+# # but dont print i.e. "bell in window 0" status craps
+hardstatus off
+#
+shelltitle "$"
+#
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{C}%Y-%m-%d %{W}%c %{g}]'
+#
+defflow off
+#
+# #rvm needs this
+shell -${SHELL}
+
+bindkey ^? stuff ^H
+vbell off
+
+screen -t GIT /bin/bash 
+screen -t test /bin/bash
+screen -t CC /bin/bash 
+
