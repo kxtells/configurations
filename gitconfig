@@ -1,6 +1,6 @@
 [user]
-	name = Jordi Castells
-	email = jorcas01@arm.com
+	name = user
+	email = a@b.com
 [color]
 	ui = true
 
@@ -12,7 +12,9 @@
     lg  = log --format=format:'%C(bold blue)%h%C(reset)  %C(bold green)%an%C(reset) %s'
     lgg = log --format=format:'%C(bold blue)%h%C(reset) %C(bold yellow)%d%C(reset) %C(bold green)%an%C(reset) %s'
     lgb = log --graph --all --format=format:'%C(bold blue)%h%C(reset) %C(bold yellow)%d%C(reset) - %C(bold green)%ar%C(reset) %C(white)%s%C(reset) %C(bold white) -- %an%C(reset) ' --abbrev-commit --date=relative
-    bd    = !gitb.pl
+    branch-edit-description = branch --edit-description
     bde   = branch --edit-description
     lgc   = log --name-status git-svn..HEAD
     fp    = format-patch
+    pcb   = git push origin HEAD
+    push-current-branch = git push origin HEAD
