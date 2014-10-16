@@ -20,6 +20,9 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" CHars to use with listchars
+set listchars=tab:▸\ ,eol:¬
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -49,7 +52,7 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -178,7 +181,7 @@ map <leader>tm :tabmove
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
   " set switchbuf=useopen,usetab,newtab
   " Fora newtab. Quan uso quickfix no vull que salti a tabs nous
