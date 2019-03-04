@@ -93,12 +93,15 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
 endif
+set t_Co=256
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+set guifont=Inconsolata\ Medium\ 12
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -375,3 +378,10 @@ if has('gui_running')
 else
     colorscheme desert
 endif
+
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+
+vnoremap <leader>vg y:vimgrep "<c-r>"" **/*<CR>
+let g:vim_markdown_folding_disabled=1
