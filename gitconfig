@@ -16,5 +16,5 @@
     bde   = branch --edit-description
     lgc   = log --name-status git-svn..HEAD
     fp    = format-patch
-    pcb   = git push origin HEAD
-    push-current-branch = git push origin HEAD
+    pcb   = push origin HEAD
+    push-current-branch = push origin HEAD
